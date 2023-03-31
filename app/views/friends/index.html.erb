@@ -1,9 +1,8 @@
-<p style="color: green"><%= notice %></p>
 
 <h1>Friends List</h1>
 
-<table>
-  <thead>
+<table class="table table-striped table-bordered">
+  <thead class="thead-dark">
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
@@ -17,16 +16,16 @@
   <tbody>
      <% @friends.each do |friend| %>
      <tr>
-      <th> <%= friend.first_name %> </th>
-      <th> <%= friend.last_name %> </th>
-      <th> <%= friend.email %> </th>
-      <th> <%= friend.phone %> </th>
-      <th> <%= friend.twitter %> </th>
-      <th> <%= link_to "Show Friend", friend %> </th>
+      <td> <%= friend.first_name %> </td>
+      <td> <%= friend.last_name %> </td>
+      <td> <%= friend.email %> </td>
+      <td> <%= friend.phone %> </td>
+      <td> <%= friend.twitter %> </td>
+      <td> <%= link_to "Show Friend", friend %> | <%= link_to "Edit Friend", edit_friend_path(friend) %> | <%= link_to "Delete Friend", friend_path(friend) %> </td>
      </tr>
      <% end %>
   </tbody>
 
 </table>
 
-<%= link_to "New friend", new_friend_path %>
+<%= link_to "New friend", new_friend_path, class: "btn btn-secondary" %>

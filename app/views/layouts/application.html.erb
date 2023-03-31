@@ -18,9 +18,12 @@
   <body>
     <%= render 'home/navbar' %>
 
-
     <div class="container">
-    <br>
+    <% if notice %>
+      <%= render 'layouts/notice' %>
+    <% end %>
+
+
       <%= yield %>
     </div>
 

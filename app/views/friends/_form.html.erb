@@ -12,31 +12,37 @@
   <% end %>
 
   <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, placeholder: :first_name %>
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
+  <br>
 
   <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.text_field :last_name, placeholder: :last_name %>
   </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
-  </div>
+  <br>
 
   <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :email, placeholder: :email %>
   </div>
 
+  <br>
+
   <div>
-    <%= form.submit %>
+    <%= form.text_field :phone, placeholder: :phone %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.text_field :twitter, placeholder: :twitter %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.submit class: "btn btn-secondary"%> |
+    <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
   </div>
 <% end %>
