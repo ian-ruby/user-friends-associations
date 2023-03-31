@@ -13,6 +13,8 @@ gem "puma", "~> 5.0"
 
 gem "importmap-rails"
 
+gem 'devise', '~> 4.9'
+
 gem "turbo-rails"
 
 gem "stimulus-rails"

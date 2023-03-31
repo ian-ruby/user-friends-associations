@@ -2,8 +2,9 @@
   <%= link_to 'Friend App', root_path, class: "navbar-brand" %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       
+      <%# Nav links at the top of every page in order from left to right -- Ian %>
       <li class="nav-item">
         <%= link_to 'Friends', friends_path , class: "nav-link" %>
       </li>
@@ -13,12 +14,25 @@
       <li class="nav-item">
         <%= link_to 'About Us', home_about_path, class: "nav-link" %>
       </li>
+
+      <li class="nav-item mr-auto">
+        <%= link_to 'Edit Profile', edit_user_registration_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item mr-auto">
+        <%= link_to 'Sign in', new_user_session_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item mr-auto">
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item mr-auto">
+        <%= link_to 'Sign up', new_user_registration_path, class: "nav-link" %>
+      </li>
+
+
       
     </ul>
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
