@@ -11,37 +11,37 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.text_field :first_name, placeholder: :first_name %>
+  <div class="field form-group">
+    <%= form.text_field :first_name, placeholder: :first_name, class: "form-control" %>
   </div>
 
   <br>
 
-  <div>
-    <%= form.text_field :last_name, placeholder: :last_name %>
+  <div class="field form-group">
+    <%= form.text_field :last_name, placeholder: :last_name, class: "form-control" %>
   </div>
 
   <br>
 
-  <div>
-    <%= form.text_field :email, placeholder: :email %>
+  <div class="field form-group">
+    <%= form.text_field :email, placeholder: :email, class: "form-control" %>
   </div>
 
   <br>
 
-  <div>
-    <%= form.text_field :phone, placeholder: :phone %>
+  <div class="field form-group">
+    <%= form.text_field :phone, placeholder: :phone, class: "form-control" %>
   </div>
 
   <br>
 
-  <div>
-    <%= form.text_field :twitter, placeholder: :twitter %>
+  <div class="field form-group">
+    <%= form.text_field :twitter, placeholder: :twitter, class: "form-control" %>
   </div>
 
   <br>
 
-  <div>
+  <div class="field form-group">
     <%= form.submit class: "btn btn-secondary"%> |
     <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
   </div>
