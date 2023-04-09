@@ -34,15 +34,21 @@
   </div>
 
   <br>
+  <div class="field form-group">
+    <%= form.text_field :user_id, placeholder: "The user id goes here", class: "form-control" %>
+  </div>
 
+  <br>
   <div class="field form-group">
     <%= form.text_field :twitter, placeholder: :twitter, class: "form-control" %>
   </div>
 
+
+  <%= current_user.id %>
   <br>
 
   <div class="field form-group">
-    <%= form.submit class: "btn btn-secondary"%> |
+    <%= form.submit class: "btn btn-primary"%> |
     <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
   </div>
 <% end %>
