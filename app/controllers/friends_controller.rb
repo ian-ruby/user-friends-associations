@@ -8,7 +8,7 @@ class FriendsController < ApplicationController
     if current_user
       @friends = current_user.friends
     else
-      @friends = Friend.all
+      redirect_to new_user_session_path
     end
   end
 
