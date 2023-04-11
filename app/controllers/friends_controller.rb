@@ -5,7 +5,11 @@ class FriendsController < ApplicationController
 
   # GET /friends or /friends.json
   def index
-    @friends = Friend.all
+    if current_user
+      @friends = current_user.friends
+    else
+      @friends = Friend.all
+    end
   end
 
   # GET /friends/1 or /friends/1.json
@@ -26,7 +30,7 @@ class FriendsController < ApplicationController
   def create
     # @friend = Friend.new(friend_params)
     @friend = current_user.friends.build(friend_params)
-    
+
     respond_to do |format|
       if @friend.save
         format.html { redirect_to friend_url(@friend), notice: "Friend was successfully created." }
