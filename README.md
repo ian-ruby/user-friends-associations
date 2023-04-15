@@ -1,24 +1,39 @@
-# README
+# Project Title
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple overview of use/purpose.
 
-Things you may want to cover:
+## Friends App
 
-* Ruby version
+This was developed to practice associations in rails. 
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Dependencies
 
-* Database creation
+* No known dependencies
 
-* Database initialization
+### Installing
 
-* How to run the test suite
+* After cloning the project to your local computer, `cd` into your cloned project and run `bundle install` to install all the gems used.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Executing program
 
-* Deployment instructions
+* Run `rails server` to start the Puma server.
 
-* ...
+
+## Authors
+
+- ian-ruby
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+* To be added. 
+
+## Acknowledgments
+
+* Make a pull request to appear here

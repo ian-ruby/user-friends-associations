@@ -8,7 +8,6 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Twitter</th>
-      <th>User Id</th>
       <th colspan=""></th>
     </tr>
   </thead>
@@ -22,7 +21,6 @@
       <td> <%= friend.email %> </td>
       <td> <%= friend.phone %> </td>
       <td> <%= friend.twitter %> </td>
-      <td> <%= friend.user.id %> </td>
       <td> <%= button_to "Delete Friend", friend, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %> </td>
      </tr>
      <% end %>
