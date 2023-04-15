@@ -1,8 +1,5 @@
-# Project Title
 
-Simple overview of use/purpose.
-
-## Friends App
+# Friends App
 
 This was developed to practice associations in rails. 
 
