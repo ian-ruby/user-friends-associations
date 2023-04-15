@@ -20,7 +20,11 @@ This was developed to practice associations in rails.
 
 ## Authors
 
-- ian-ruby
+* ian-ruby
+
+## Production URL
+* https://friendsassociations.herokuapp.com/ 
+
 
 ## Version History
 
